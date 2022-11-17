@@ -5,7 +5,6 @@
 :set smarttab
 :set softtabstop=4
 :set mouse=a
-
 call plug#begin()
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-lua/plenary.nvim'
@@ -57,7 +56,6 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = '  '
 let g:airline_symbols.readonly = '  '
 let g:airline_symbols.linenr = '  '
-
 inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 lua << EOF
 require("bufferline").setup{}
